@@ -5,10 +5,11 @@
 	$judul = $_REQUEST['judul'];
 	$tanggal = $_REQUEST['tanggal'];
 	$alamat = $_REQUEST['alamat'];
+	$id_admin = $_REQUEST['id_admin']
 
-	//INSERT INTO msproduct (name, price, quantity) VALUES() 
-	$query = "INSERT INTO event(judul, tanggal, alamat) 
-			VALUES('" . $judul . "'," . $tanggal . "," . $alamat . ")";
+	
+	$query = "INSERT INTO event(judul, tanggal, alamat, id_admin) 
+			VALUES('" . $judul . "'," . $tanggal . "," . $alamat . "," . $id_admin . ")";
 
 	//echo $query;
 
