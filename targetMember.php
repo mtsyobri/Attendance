@@ -3,11 +3,9 @@
 	include "connect.php";
 
 	$id_member = $_REQUEST['id_member'];
-	$arrived = $_REQUEST['arrived'];
-
 	
-	$query = "INSERT INTO attendance_member(id_member, arrived) 
-			VALUES('" . $id_member . "'," . $arrived . ")";
+	$query = "INSERT INTO attendance_member(id_member) 
+			VALUES('" . $id_member . "')";
 
 	//echo $query;
 

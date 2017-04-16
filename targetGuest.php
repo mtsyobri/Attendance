@@ -3,11 +3,9 @@
 	include "connect.php";
 
 	$name = $_REQUEST['name'];
-	$arrived = $_REQUEST['arrived'];
-
-	//INSERT INTO msproduct (name, price, quantity) VALUES() 
-	$query = "INSERT INTO peserta(name, arrived) 
-			VALUES('" . $name . "'," . $arrived . ")";
+	
+	$query = "INSERT INTO peserta(name) 
+			VALUES('" . $name . "')";
 
 	//echo $query;
 
